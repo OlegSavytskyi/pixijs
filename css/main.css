@@ -27,8 +27,6 @@ p {
 	text-align: center;
     font-size: 40px;
 }
-
-
 	
 div>button {
 	width: 70px;
@@ -41,7 +39,6 @@ div>button {
 
 :focus {
 	outline: none;
-	
 }
 
 .right {
