@@ -66,7 +66,7 @@ var controller = {
 			shapeY = -50;
 		}
         randColor = Math.floor(Math.random() * model.colors.length);
-		randShape = Math.floor(Math.random() * 6);
+		randShape = Math.floor(Math.random() * 7);
         var radius = 50;
 		var shape = new PIXI.Graphics();
 		shape.lineStyle(0);
@@ -83,6 +83,9 @@ var controller = {
 			shape.drawPolygon([25, shapeY+0, 75, shapeY+0, 100, shapeY+25, 75, shapeY+50, 25, shapeY+50, 0, shapeY+25])
 		} else if (randShape == 5){
 			shape.drawPolygon([25, shapeY+0, 75, shapeY+0, 75, shapeY+50, 25, shapeY+50, 0, shapeY+25])
+		} else if (randShape == 6){
+			shape.bezierCurveTo(100, 200, 200, 10, 30, 20)
+			shape.y = -100;
 		}
 		shape.endFill();
 		shape.interactive = true;
